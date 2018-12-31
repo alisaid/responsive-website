@@ -133,6 +133,10 @@ main {
  *
  */
 
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /*
  *
@@ -147,6 +151,31 @@ main {
   background-size: cover;
   height: 300px;
 }
+
+@media screen and (min-width: 500px) {
+  .hero {width: 50%; order: 0}
+  .weather {width: 50%; order: 1}
+  .top-news {width: 100%; order: 2}
+  .scores {width: 100%; order: 3}
+  .recent-news {width: 100%; order: 4}
+} 
+
+@media screen and (min-width: 800px) {
+  .hero {width: 50%; order: 0}
+  .weather {width: 40%; order: 3}
+  .top-news {width: 50%; order: 1}
+  .scores {width: 60%; order: 2}
+  .recent-news {width: 100%; order: 4}
+} 
+
+@media screen and (min-width: 1000px){
+  body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
 .hero article {
   box-sizing: border-box;
